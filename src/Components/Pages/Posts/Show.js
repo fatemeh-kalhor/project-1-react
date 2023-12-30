@@ -49,7 +49,7 @@ const Show = () => {
               });
                 
               
-                const res =  axios.delete(`https://jsonplaceholder.typicode.com/posts/${id}`, { method: "delete" })
+                const res =  axios.delete(`http://localhost:3004/posts/${id}`, { method: "delete" })
                 console.log(res.data);
                 navigate("/posts")
                 
